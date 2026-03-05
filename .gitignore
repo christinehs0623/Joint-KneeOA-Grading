@@ -1,4 +1,5 @@
 __pycache__/
 wandb/
 original_data/V00/id_shapes_LR_V00.npz
+original_data/V00/Bilateral_PA_Fixed_Flexion_Knee/
 original_data/V00/*.h5
