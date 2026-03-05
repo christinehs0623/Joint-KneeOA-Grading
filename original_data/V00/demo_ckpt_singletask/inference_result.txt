@@ -1,0 +1,16 @@
+Test Loss: 0.8655
+[Test] Acc: 0.6291, F1: 0.6368, Kappa: 0.8046
+
+[kl]
+              precision    recall  f1-score   support
+
+        KL 0       0.75      0.74      0.74       689
+        KL 1       0.31      0.42      0.35       319
+        KL 2       0.68      0.52      0.59       475
+        KL 3       0.75      0.77      0.76       248
+        KL 4       0.80      0.80      0.80        59
+
+    accuracy                           0.63      1790
+   macro avg       0.66      0.65      0.65      1790
+weighted avg       0.65      0.63      0.64      1790
+

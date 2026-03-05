@@ -1,0 +1,30 @@
+Test Loss: 0.1186
+[Test] kl - Acc: 0.8000, F1: 0.7650, Kappa: 0.8792
+
+[kl]
+              precision    recall  f1-score   support
+
+        KL 0       0.60      1.00      0.75         3
+        KL 1       0.00      0.00      0.00         1
+        KL 2       1.00      0.67      0.80         3
+        KL 3       1.00      1.00      1.00         2
+        KL 4       1.00      1.00      1.00         1
+
+    accuracy                           0.80        10
+   macro avg       0.72      0.73      0.71        10
+weighted avg       0.78      0.80      0.77        10
+
+[Test] jsnm - Acc: 0.9000, F1: 0.9044, Kappa: 0.9524
+
+[jsnm]
+              precision    recall  f1-score   support
+
+      JSNM 0       1.00      0.80      0.89         5
+      JSNM 1       0.67      1.00      0.80         2
+      JSNM 2       1.00      1.00      1.00         2
+      JSNM 3       1.00      1.00      1.00         1
+
+    accuracy                           0.90        10
+   macro avg       0.92      0.95      0.92        10
+weighted avg       0.93      0.90      0.90        10
+
