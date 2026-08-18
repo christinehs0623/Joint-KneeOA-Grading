@@ -27,16 +27,16 @@ conda create -n knee_mil python=3.10
 conda activate knee_mil
 
 # Install PyTorch with CUDA 12.8 support
-pip3 install torch torchvision torchaudio \
-  --index-url https://download.pytorch.org/whl/cu128
+pip install torch torchvision \
+  --index-url https://download.pytorch.org/whl/cu130
 
 # Install core dependencies
 conda install -c conda-forge \
-  scikit-learn pandas matplotlib opencv h5py pydicom tqdm \
-  ipykernel ipywidgets jupyterlab
+  scikit-learn pandas matplotlib opencv h5py pydicom tqdm pillow captum \
+  ipykernel ipywidgets jupyterlab 
 
 # Install additional Python packages
-pip install absl-py==2.2.2 grad-cam==1.5.5 ttach==0.0.3
+pip install absl-py==2.2.2 grad-cam==1.5.5 ttach==0.0.3 quantus==0.3.5
 pip install wandb
 
 ```
@@ -211,3 +211,18 @@ python inference_k_fold.py \
   --multitask_type off \
   --note single-task
 ```
+
+# Quantus
+To use the Quantus experiments to compare explanation methods such as Saliency and Integrated Gradients. You can run the following command from the proejct root.
+
+```
+python -m quant.quantus_cam_eval
+```
+
+# Heatmap correlation 
+These experiments are designed to determine whether the CAM × attention is correctly positioned on the knee images according to their grading. You can run the following commands from the proejct root.
+
+ ```
+ python -m quantus.correlation_medial_lateral_ours_KL_only
+ python -m quantus.correlation_medial_lateral_ours_OARSI_KL
+ ```
