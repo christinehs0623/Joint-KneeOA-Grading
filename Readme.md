@@ -213,7 +213,15 @@ python inference_k_fold.py \
 ```
 
 # Quantus
-To use the Quantus experiments to compare explanation methods such as Saliency and Integrated Gradients. You can run the following command from the proejct root.
+
+Get preprocess data for Tiulpin model at
+ ```
+ https://drive.google.com/file/d/1r9qzIUbATNQ12bc6LrNEAfdPOFJFzET7/view?usp=sharing
+ ``` 
+ You can adjust the path accordingly in the code.
+
+
+To use the Quantus experiments to compare explanation methods such as Saliency and Integrated Gradients. You can run the following command from the project root.
 
 ```
 python -m quant.quantus_cam_eval
